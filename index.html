@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Food Donation</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <button onclick="document.getElementById('id01').style.display='block'" class="index_button">Log In</button>
+        <button onclick="document.getElementById('id02').style.display='block'" class="index_button">Sign Up</button>
+    </div>
+    <div class="center padding-top-2">
+        <h1>Food Donation</h1>
+    </div>
+    <img src="src/mainpage_background.svg">
+
+    <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+<!--            <img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+        </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+
+                <button type="submit">Login</button>
+                <br>
+            </div>
+        </form>
+    </div>
+
+    <div id="id02" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+            <div class="container">
+                <p>Please fill in this form to create an account.</p>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" id="email" name="email" required>
+
+                <label for="psw2"><b>Password</b></label>
+                <input type="text" placeholder="Enter Password" id="psw2" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="text" placeholder="Enter Password again" id="psw-repeat" name="psw-repeat" required>
+
+                <label for="person"><b>Are you a donor or a receiver:</b></label>
+                <form action="/action_page.php">
+                    <select id="person" name="person">
+                        <option value="donor">Donor</option>
+                        <option value="receiver">Receiver</option>
+                    </select>
+                </form>
+
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

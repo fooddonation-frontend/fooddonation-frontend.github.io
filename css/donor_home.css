@@ -1,0 +1,80 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: rgb(245,245,245);
+    font-family: Roboto Slab, sans-serif;
+}
+
+h4{
+    font-weight: 800;
+    color: rgb(61,85,61);
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+.col-50{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.col-20-2-20-2-56{
+    display: grid;
+    grid-template-columns: 20% 2% 20% 2% 56%;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:6%;
+    padding-right: 2%;
+    width: 70%
+}
+
+img{
+    margin-right: auto;
+    margin-left: auto;
+    width:80%;
+}
+
+input{
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    height: 32px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+input:hover{
+    border-color: #185a9d;
+}
+
+.submit{
+    height: 40px;
+    width: 20%;
+}
+
+.submit:hover{
+    color: white;
+    background-color: #185a9d;
+    animation-name: submit_transition;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-color: transparent;
+}
+
+@keyframes submit_transition {
+    0%  {background-color: #185a9d}
+    50%  {background-color: #43cea2;}
+}
+
+label{
+    font-size: 14px;
+    color:black;
+}
+
+.instructions{
+    color: black;
+}
